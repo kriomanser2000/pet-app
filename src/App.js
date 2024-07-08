@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-function App() {
+import Pet from './components/Pet';
+const App = () => 
+{
+  const petData = 
+  {
+    name: 'Bella',
+    species: 'Cat',
+    age: 3,
+    description: 'A friendly and playful cat'
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Pet Information</h1>
+      <Pet
+        name={petData.name}
+        species={petData.species}
+        age={petData.age}
+        description={petData.description}
+      />
     </div>
   );
-}
-
+};
 export default App;
