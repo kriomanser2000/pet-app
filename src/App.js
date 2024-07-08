@@ -5,7 +5,7 @@ const App = () =>
 {
   const petData = 
   {
-    name: 'Bella',
+    name: 'Super Cat Albedro',
     species: 'Cat',
     age: 3,
     description: 'A friendly and playful cat'
